@@ -1,1 +1,2 @@
 *.C++ linguist-detectable=true
+*.CMake linguist-detectable=false
