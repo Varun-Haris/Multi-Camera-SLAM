@@ -23,7 +23,7 @@ public:
   		std::cout << "webcam header : \n" << msg->header << std::endl;
   		try{
   			cv::imshow("view", cv_bridge::toCvShare(msg, "bgr8")->image);
-    		cv::waitKey(1);
+    			cv::waitKey(1);
   		}
   		catch(cv_bridge::Exception& e){
   			ROS_ERROR("Couldn't get image due to %s",e.what());
@@ -34,7 +34,7 @@ public:
   		std::cout << "usb1 header : \n" << msg->header << std::endl;
   		try{
   			cv::imshow("view1", cv_bridge::toCvShare(msg, "bgr8")->image);
-    		cv::waitKey(1);
+    			cv::waitKey(1);
   		}
   		catch(cv_bridge::Exception& e){
   			ROS_ERROR("Couldn't get image due to %s",e.what());
@@ -45,7 +45,7 @@ public:
   		std::cout << "usb2 header : \n" << msg->header << std::endl;
   		try{
   			cv::imshow("view2", cv_bridge::toCvShare(msg, "bgr8")->image);
-    		cv::waitKey(1);
+    			cv::waitKey(1);
   		}
   		catch(cv_bridge::Exception& e){
   			ROS_ERROR("Couldn't get image due to %s",e.what());
