@@ -3,7 +3,6 @@
 #include <image_transport/transport_hints.h>
 #include <cv_bridge/cv_bridge.h>
 #include <sensor_msgs/image_encodings.h>
-#include <boost/bind.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
 class camSubs{
