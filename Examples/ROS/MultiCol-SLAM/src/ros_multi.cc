@@ -107,7 +107,7 @@ int main(int argc, char **argv){
 
 	const string path2voc = "/home/varunharis/MultiCol-SLAM/Examples/small_orb_omni_voc_9_6.yml";
 	const string path2settings = "/home/varunharis/MultiCol-SLAM/Examples/Lafida/Slam_Settings_indoor1.yaml"; 
-	const string path2calibrations = "/home/varunharis/MultiCol-SLAM/Examples/Lafida/MultiCamSys_Calibration.yaml";
+	const string path2calibrations = "/home/varunharis/MultiCol-SLAM/Examples/Lafida";
 
 	camSubs *cam = new camSubs;
 	
