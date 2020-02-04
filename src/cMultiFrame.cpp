@@ -21,7 +21,7 @@
 /*
 * MultiCol-SLAM is based on ORB-SLAM2 which was also released under GPLv3
 * For more information see <https://github.com/raulmur/ORB_SLAM2>
-* Raúl Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
+* RaÃºl Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
 */
 
 #include "cMultiFrame.h"
@@ -125,7 +125,6 @@ namespace MultiColSLAM
 		std::vector<std::vector<cv::Vec3d>> keyRaysTemp(nrCams);
 		int laufIdx = 0;
 
-#pragma omp parallel for num_threads(nrCams)
 		for (int c = 0; c < nrCams; ++c)
 		{
 			cCamModelGeneral_ camModel = camSystem.GetCamModelObj(c);
